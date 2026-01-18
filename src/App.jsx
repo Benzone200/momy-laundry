@@ -4,7 +4,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { useState } from 'react'
 import './App.css'
 import Intro1 from "./components/Intro.jsx"
-import Login from "./authentication/login.jsx"
+import Login from "./authentication/Login.jsx"
 import Verify from "./authentication/Verify.jsx"
 import Register from "./authentication/Register.jsx"
 import Forgot from "./authentication/Forgot.jsx"
