@@ -65,7 +65,7 @@ const Intro = () => {
   };
 
   return (
-    <section className="h-screen flex flex-col justify-between px-4 overflow-hidden">
+    <section className="h-screen flex flex-col justify-between px-4 overflow-hidden bg-white">
 
       {/* Logo */}
       <img

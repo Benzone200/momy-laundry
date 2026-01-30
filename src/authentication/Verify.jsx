@@ -1,9 +1,13 @@
 import React, { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import left from "../assets/images/left.png";
 
 const Verify = () => {
   const [otp, setOtp] = useState(["", "", "", "", "", ""]);
   const inputsRef = useRef([]);
+  const navigate = useNavigate();
+
 
   const handleChange = (value, index) => {
     if (!/^[0-9]?$/.test(value)) return;
@@ -25,7 +29,7 @@ const Verify = () => {
   };
 
   return (
-    <section className="mt-1 overflow-hidden">
+    <section className="mt-1 overflow-hidden bg-white">
       <div className="flex flex-row mx-8 items-center">
         <button onClick={() => navigate(-1)} className="p-1">
       <img
@@ -70,7 +74,9 @@ const Verify = () => {
 
       {/* Verify Button */}
         
-              <button className="bg-[#ce1567] w-[350px] mt-10 ml-6 text-white py-3 px-10 rounded-lg text-[14px] font-semibold hover:bg-[#ce1567]  ">
+              <button 
+              onClick={() => navigate("/home")}
+              className="bg-[#ce1567] w-[350px] mt-10 ml-6 text-white py-3 px-10 rounded-lg text-[14px] font-semibold hover:bg-[#ce1567]  ">
                 Verify
       
               </button>

@@ -9,6 +9,7 @@ import Verify from "./authentication/Verify.jsx"
 import Register from "./authentication/Register.jsx"
 import Forgot from "./authentication/Forgot.jsx"
 import Change from "./authentication/Change.jsx"
+import Home from "./Pages/Home.jsx"
 function App() {
   return (
     <Routes>
@@ -21,6 +22,9 @@ function App() {
       <Route path="/forgot-password" element={<Forgot />} />
       <Route path="/change-password" element={<Change />} />
       <Route path="/verify" element={<Verify />} />
+
+      {/* Home */}
+      <Route path="/home" element={<Home />} />
 
       {/* Catch-all */}
       <Route path="*" element={<Navigate to="/" />} />

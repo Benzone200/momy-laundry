@@ -3,7 +3,7 @@ import left from "../assets/images/left.png";
 
 const Register = () => {
   return (
-        <section className="mt-1 overflow-hidden">
+        <section className="mt-1 overflow-hidden bg-white">
                 <div className="flex flex-row mx-8 items-center">
                         <img src={left} alt="back" />
                         <h2 className="text-[18px] font-semibold  mx-auto">

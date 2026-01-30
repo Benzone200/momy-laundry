@@ -6,7 +6,7 @@ const Change = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="mt-1 overflow-hidden">
+    <section className="mt-1 overflow-hidden bg-white">
       {/* Header */}
       <div className="flex flex-row mx-8 items-center">
         <button onClick={() => navigate(-1)}>

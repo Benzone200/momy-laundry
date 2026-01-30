@@ -16,7 +16,7 @@ const Login = () => {
   };
 
   return (
-    <section className="h-screen flex flex-col px-4 overflow-hidden">
+    <section className="h-screen flex flex-col px-4 overflow-hidden bg-white">
       {/* Logo */}
       <img
         src={logo}
