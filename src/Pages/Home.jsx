@@ -17,6 +17,7 @@ import history from "../assets/images/history.png";
 import setting from "../assets/images/setting.png";
 import cross from "../assets/images/cross.png";
 import bg from "../assets/images/bg.png";
+import item from "../assets/images/item.png";
 
 // Services data
 const services = [

@@ -10,6 +10,7 @@ import Register from "./authentication/Register.jsx"
 import Forgot from "./authentication/Forgot.jsx"
 import Change from "./authentication/Change.jsx"
 import Home from "./Pages/Home.jsx"
+import Order from "./Pages/Order.jsx"
 function App() {
   return (
     <Routes>
@@ -25,6 +26,7 @@ function App() {
 
       {/* Home */}
       <Route path="/home" element={<Home />} />
+      <Route path="/order" element={<Order />} />
 
       {/* Catch-all */}
       <Route path="*" element={<Navigate to="/" />} />
