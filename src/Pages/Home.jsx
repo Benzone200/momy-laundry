@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 // Images
 import pfp from "../assets/images/pfp.png";
@@ -70,6 +71,7 @@ const orders = [
 ];
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <section className="mt-5 mx-5 bg-white overflow-hidden">
       {/* Top Bar */}
@@ -230,7 +232,9 @@ const Home = () => {
   {/* Floating + button */}
   <div className="absolute top-2 left-1/2 -translate-x-1/2 z-20">
     <div className="w-16 h-16 rounded-full bg-[#CE1567] flex items-center justify-center shadow-lg">
+     <button onClick={() => navigate("/order")} className="p-1">
       <img src={cross} alt="add" className="w-8 h-8" />
+      </button>
     </div>
   </div>
 

@@ -11,6 +11,7 @@ import Forgot from "./authentication/Forgot.jsx"
 import Change from "./authentication/Change.jsx"
 import Home from "./Pages/Home.jsx"
 import Order from "./Pages/Order.jsx"
+import Pickup from "./Pages/Pickup.jsx"
 function App() {
   return (
     <Routes>
@@ -24,9 +25,10 @@ function App() {
       <Route path="/change-password" element={<Change />} />
       <Route path="/verify" element={<Verify />} />
 
-      {/* Home */}
+      {/* Pages */}
       <Route path="/home" element={<Home />} />
       <Route path="/order" element={<Order />} />
+      <Route path="/pickup" element={<Pickup />} />
 
       {/* Catch-all */}
       <Route path="*" element={<Navigate to="/" />} />

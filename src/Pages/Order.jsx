@@ -165,6 +165,12 @@ const Order = () => {
 
   {/* Button */}
   <button
+  onClick={() => navigate("/pickup", {
+  state: {
+    subtotal: totalCost, 
+  },
+})
+}
     onMouseDown={() => setPressed(true)}
     onMouseUp={() => setPressed(false)}
     onMouseLeave={() => setPressed(false)}
